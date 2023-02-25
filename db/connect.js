@@ -1,13 +1,11 @@
 const mongoose = require("mongoose");
 
-// mongoose.set("strictQuery", false);
-
-const connectDB = (url) => {
+const connectDB = async (url) => {
   return mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
+    // useCreateIndex: true,
+    // useFindAndModify: false,
   });
 };
 
